@@ -1,27 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
-import { Button } from 'react-bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes
+} from 'react-router-dom';
+import Booking from './components/Pages/Booking';
+import Home from './components/Pages/Home';
 
+/* React Bootstrap */
+import { 
+  Navbar,
+  Container
+} from 'react-bootstrap'
+ 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        <Button>Click Me</Button>
-      </header>
-    </div>
+      <Router>
+          <Navbar className='header-background'>
+            <Container fluid>
+              <Navbar.Brand href="#home" className='header-title'>Student Online Enrollment Booking System</Navbar.Brand>
+              <Navbar.Toggle />
+            </Container>
+          </Navbar>
+          <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path='/booking' element={<Booking />} />
+          </Routes>
+      </Router>
   );
 }
 

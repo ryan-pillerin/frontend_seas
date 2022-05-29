@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|Abril+Fatface|Permanent+Marker+Bree+Serif');
+
+$font-title: 'Bree Serif';
+$font-default: 'Roboto';
+
+.header-title {
+    font-family: $font-title;
+    color: #fff !important;
+}
+
+.header-background {
+    background-color: #146152;
+}

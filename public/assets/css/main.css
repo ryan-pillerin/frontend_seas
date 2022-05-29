@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto|Abril+Fatface|Permanent+Marker+Bree+Serif");
+/* Full Calendar Theme */
+@import url("https://fonts.googleapis.com/css?family=Roboto|Abril+Fatface|Permanent+Marker|Bree+Serif");
+.header-title {
+  font-family: "Bree Serif";
+  color: #fff !important;
+}
+
+.header-background {
+  background-color: #146152;
+}
+
+.fc {
+  margin-top: 2rem;
+  padding: 1rem;
+}
+
+body {
+  font-family: "Roboto";
+  font-size: 1rem;
+}
+
+/*# sourceMappingURL=main.css.map */
